@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQuery</title>
+
+
+        <style type="text/css">
+
+                #container {
+
+                        background:  green;
+                        color: white;
+
+                }
+
+            .title {
+
+                height: 200px;
+            }
+
+
+        </style>
+
+    </head>
+
+<body>
+
+<h2 id="container" class="">Understanding JQuery</h2>
+
+
+<button id="btnClick">Click Me</button>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+
+
+            $('#btnClick').bind('click', function () {
+
+                $('#container').css({
+
+                    'background' : 'red'
+                });
+
+                $('h2').addClass('title');
+
+            })
+
+
+
+        })
+
+
+
+
+
+        console.log($);
+
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>
